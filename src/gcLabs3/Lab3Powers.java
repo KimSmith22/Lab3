@@ -9,8 +9,8 @@ public class Lab3Powers {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//variables
-		int number;
-		
+		int number = 0;
+		double square = Math.pow(number,2);
 		
 		String choice;
 		choice = "y";
@@ -28,8 +28,8 @@ public class Lab3Powers {
 			System.out.println(" NUMBER        " + " SQUARED       " + " CUBED " );
 			System.out.println("========       " + "=========      " + "=======");
 		
-			for(int i = 0; i <=50; i++){
-			System.out.println("  "+(i) +"             "+(i * number)+ "         "+(i * number * number));
+			for(int i = 1; i <=number; i++){
+			System.out.println("  "+(i) +"             "+(i)+ "         "+(i));//changed for testing purposes with modified formulas in loop
 			}
 			System.out.println();
 			System.out.println("Continue? y/n: ");
