@@ -10,7 +10,6 @@ public class Lab3Powers {
 		// TODO Auto-generated method stub
 		//variables
 		int number = 0;
-		double square = Math.pow(number,2);
 		
 		String choice;
 		choice = "y";
@@ -21,7 +20,7 @@ public class Lab3Powers {
 		
 		do{
 			
-		System.out.println("Enter an integer between 1 and 50:");
+		System.out.println("Enter an integer:");
 		k = new Scanner(System.in);
 		number = k.nextInt();
 		
@@ -29,7 +28,7 @@ public class Lab3Powers {
 			System.out.println("========       " + "=========      " + "=======");
 		
 			for(int i = 1; i <=number; i++){
-			System.out.println("  "+(i) +"             "+(i)+ "         "+(i));//changed for testing purposes with modified formulas in loop
+			System.out.println("  "+(i) +"             "+(Math.pow(i, 2))+ "         "+(Math.pow(i, 3)));//changed for testing purposes with modified formulas in loop
 			}
 			System.out.println();
 			System.out.println("Continue? y/n: ");
